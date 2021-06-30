@@ -241,9 +241,14 @@ flux suspend ks flux-system
 ► suspending kustomizations flux-system in flux-system namespace
 ✔ kustomizations suspended
 
+-> flux kustomization status print
+flux get kustomizations
+
+
 -> resume flux
 flux resume ks flux-system
 
 -> push to download changes
 flux reconcile ks flux-system
+
 ```
